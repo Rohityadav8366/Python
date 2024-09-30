@@ -43,8 +43,24 @@ def ageCatogori():
         print("Vopter is child:")
     elif voterAge <18:
         print("Voter is teenager:")
-    elif voterAge>=18:
+    elif voterAge>=18 and voterAge<60 :
         print("Voter is Adult:") 
     else:
         print("Voter is seniour Citisen:")           
-ageCatogori()        
+
+
+def moviesTickets():
+    watcherAge=int(input("Enter the age:"))
+    day=input("Enter the day:")
+    if day=="wednesday":
+        if watcherAge<18:
+            print("The age of watcher is :",watcherAge," movie ticket is $8 afetr discount $2:you should pay $6")
+        else:
+             print("The age of watcher is :",watcherAge," movie ticket is $12 afetr discount $2:you should pay $10")    
+    else:
+        if watcherAge<18:
+            print("The age of watcher is :",watcherAge," movie ticket is $8:you should pay $8")
+        else:
+             print("The age of watcher is :",watcherAge," movie ticket is $12:you should pay $12")
+
+moviesTickets()           
