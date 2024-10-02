@@ -63,4 +63,76 @@ def moviesTickets():
         else:
              print("The age of watcher is :",watcherAge," movie ticket is $12:you should pay $12")
 
-moviesTickets()           
+
+
+def tocheckPalindrome():
+    str=input("Enter the string: ")
+    ref={}
+    for ch in str:
+        ref[ch]=ref.get(ch,0)+1
+    noOdd=0
+    for i in ref.values():
+        if i%2==1:
+            noOdd+=1
+    if noOdd<=1:
+        print("possible to make pelindrome:") 
+    else:
+        print("Not possible to make pelindrome:")               
+
+
+# dictionary taking from user
+def dic():
+    n=int(input("Enter the size of dictionary:"))
+    dic={}
+    for i in range(n):
+        k=int(input("Roll.number: "))
+        v=input("Enter the name of Student: ")
+        dic[k]=v
+    
+    print(dic)    
+
+# list taking from user
+def list():
+    n=int(input("Enter the size of list: "))
+    list=[]
+    for i in range(n):
+        list.append(int(input()))
+    print(list)    
+
+# tuple taking from user
+def tupleUser():
+    n=int(input("Enter the size of tuple: "))
+    tuple1=tuple((int(input())) for i in range(n))
+        
+    print(tuple1)
+
+# Set value taking by user
+def setUser():
+    n=int(input("Enter the size of set: "))
+    set={int(input()) for i in range(n)} 
+    print(set)
+
+
+def set1():
+    n=int(input("enter the size: "))
+    set2=set()
+    for i in range(n):
+        set2.add(int(input()))
+    print(set2)
+        
+def matrix1():
+    n = int(input("Enter the number of rows (N): "))
+    m = int(input("Enter the number of columns (M): "))
+    mat = []
+    
+    # Loop to take input for each row
+    for i in range(n):
+        row = list(int(input()))
+        mat.append(row)
+    
+    # Print the entire matrix
+    print("Matrix:")
+    for row in mat:
+        print(row)
+
+matrix1()
