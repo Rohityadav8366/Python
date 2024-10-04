@@ -119,20 +119,8 @@ def set1():
     for i in range(n):
         set2.add(int(input()))
     print(set2)
-        
-def matrix1():
-    n = int(input("Enter the number of rows (N): "))
-    m = int(input("Enter the number of columns (M): "))
-    mat = []
-    
-    # Loop to take input for each row
-    for i in range(n):
-        row = list(int(input()))
-        mat.append(row)
-    
-    # Print the entire matrix
-    print("Matrix:")
-    for row in mat:
-        print(row)
 
-matrix1()
+
+def armstrong(n):
+    a=len(n)
+    
